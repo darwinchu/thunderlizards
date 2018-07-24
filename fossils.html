@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".target").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fossils</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-fossils.css">
+
+    <link rel="shortcut icon" type="img/png/jpg" href="https://d30y9cdsu7xlg0.cloudfront.net/png/37856-200.png">
+
+
+</head>
+
+<body>
+
+    <a href="#fos-top" class="target" >
+        <button id="myBtn" title="Go to top" class="btn btn-info animated fadeIn">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            <p>Top</p>
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        </button>
+    </a>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    </script>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top top-nav-collapse">
+
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html">Paleontology</a>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="index.html">History</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link target" href="fossils.html">Fossils</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="about.html">About us</a>
+                        </li>
+
+                    </ul>
+                    <!-- Links -->
+
+                    <ul class="navbar-nav nav-flex-icons">
+
+                        <li class="nav-item">
+                            <a href="http://facebook.com/darwinchu12" target="_blank" class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Collapsible content -->
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+
+    <main class="mt-5 wire" id="fos-top">
+       
+       <div class="container wire card card-body">
+        
+        <section>
+            <div class="row view full-bg-img fos-intro">
+
+                <div class="col-12 wire rgba-black-strong text-right">
+                    <h3 class="white-text my-5 fos-h3">Stunning Fossils Ever Found</h3>
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <section>   
+
+            <hr class="my-4">    
+            <div class="row">
+            </div>
+
+
+        </section>
+
+
+        <section>
+            <div class="row">
+                <div class="col-md-6 col-12 wire">
+
+                    <table>
+                        <tr>
+                            <th>Dinosaur Death Match</th>
+                        </tr>
+                        <tr>
+                            <td>The Velociraptor and Protoceratops were engaged in a desperate struggle when they were abruptly buried by a landslide</td>
+                        </tr>
+                        <tr>
+                            <td>Discovered: Gobi desert, Mongolia, 1971</td>
+                        </tr>
+                        <tr>
+                            <td>Age: 74 million years</td>
+                        </tr>
+                        <tr>
+                            <td>Location: Mongolian Dinosaur Museum, Ulan Bator</td>
+                        </tr>
+                        <tr>
+                            <td>They will remain forever locked in mortal combat. The Velociraptor has sunk its deadly foot claw deep into the neck of the herbivore, a boar-sized creature called Protoceratops. This vicious attack may have hit the carotid artery – a lethal blow.</td>
+                        </tr>
+                        <tr>
+                            <td>But the Protoceratops fought back. It has thrown the Velociraptor to the ground before it, and its jaws are locked on to the predator’s right arm. The bite appears to have broken the Velociraptor‘s arm. “There is no doubt these animals were fighting,” says Mark Norell of the American Museum of Natural History in New York, who studied the fossil while it was on loan to the museum. “There is nothing else like the fighting dinosaurs, which captures direct evidence of a single instant in time.”</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="col-md-6 col-12 wire">
+
+                    <figure class="figure hoverable">
+                      <img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2015/02/mg22530090.800-1_800.jpg" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption text-right"><small>Image: David Clark/Dinosaurs Alive/IMAX Film/Giant Screen Films</small></figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-12 wire">
+
+                    <figure class="figure hoverable">
+                      <img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2015/02/dn26970-1_800.jpg" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption text-left"><small>Image: Mick Ellison/American Museum of Natural History</small></figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="col-md-6 col-12 wire">
+
+                    <table>
+                        <tr>
+                            <th>Big Mama brooding</th>
+                        </tr>
+                        <tr>
+                            <td>She was sitting on her nest keeping her eggs warm, just like modern birds do, when disaster struck</td>
+                        </tr>
+                        <tr>
+                            <td>Discovered: Gobi Desert, Mongolia, 1994</td>
+                        </tr>
+                        <tr>
+                            <td>Age: 83 to 66 million years</td>
+                        </tr>
+                        <tr>
+                            <td>Location: Mongolian Dinosaur Museum</td>
+                        </tr>
+                        <tr>
+                            <td>The first oviraptor was discovered in Mongolia in 1922. It was given its name, which means “egg thief”, because it was found near a nest of what appeared to be Protoceratops eggs.</td>
+                        </tr>
+                        <tr>
+                            <td>In 1993, however, Mark Norell of the American Museum of Natural History found a fossilised embryo in an identical egg. He recognised it as a kind of oviraptor, suggesting the original thief was in fact a parent.</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-6 col-12 wire">
+
+                    <table>
+                        <tr>
+                            <th>Snake eating baby dinosaur</th>
+                        </tr>
+                        <tr>
+                            <td>Snake fossils are extremely rare, and this one was petrified just as it was about to eat a dinosaur hatchling</td>
+                        </tr>
+                        <tr>
+                            <td>Discovered: Gujarat, India, 1986</td>
+                        </tr>
+                        <tr>
+                            <td>Age: 68 million years</td>
+                        </tr>
+                        <tr>
+                            <td>Location: Geological Survey of India</td>
+                        </tr>
+                        <tr>
+                            <td>Unlike some dinosaurs, the giant, long-necked sauropods did not care for their eggs. Adults have never been found near nests, so it seems that sauropod hatchlings had to fend for themselves from the start. And that left the way clear for predators to feast on them as they emerged.</td>
+                        </tr>
+                        <tr>
+                            <td>One of these predators was a 3.5-metre-long snake called Sanajeh indicus. Towards the end of the age of the dinosaurs, one decided to raid a nest of a sauropod eggs, perhaps attracted by the noise of hatchlings breaking out of their shells.</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                 <div class="col-md-6 col-12 wire">
+
+                    <figure class="figure hoverable">
+                      <img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2015/02/dn26971-1_800.jpg" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption text-right"><small>Image: Sculpture: Tyler Keillor, Photo: Xiimena Erickson</small></figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-6 col-12 wire">
+
+                    <figure class="figure hoverable">
+                      <img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2015/02/dn26975-1_800.jpg" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption text-left"><small>Dinosaur birth can be dangerous (Image: Ryosuke Montani)</small></figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="col-md-6 col-12 wire">
+
+                    <table>
+                        <tr>
+                            <th>Mother giving birth</th>
+                        </tr>
+                        <tr>
+                            <td>Something went terribly wrong as this ancient ichthyosaur was giving birth, and she died along with her offspring</td>
+                        </tr>
+                        <tr>
+                            <td>Discovered: South Majiashan, China, 2011</td>
+                        </tr>
+                        <tr>
+                            <td>Age: 248 million years</td>
+                        </tr>
+                        <tr>
+                            <td>Anhui Geological Museum, China</td>
+                        </tr>
+                        <tr>
+                            <td>Birth is a dangerous process, and for this very ancient ichthyosaur mother it went terribly wrong. She was carrying at least three offspring. One was found under the mother’s body. The third was still inside her, waiting to be born. And the second was half-way out of the birth canal, making this fossil unique.</td>
+                        </tr>
+                        <tr>
+                            <td>Only part of the mother was found because the team that collected the rock in 2011 had no idea it contained ichthyosaurs – they were after a predatory fish. The ichthyosaurs were discovered only in 2012 when the fish fossil was being prepared in the lab and by this time it was too late to recover the rest of the mother, says team member Ryosuke Motani of the University of California at Davis. But they found other fossils of the same species, Chaohusaurus, which were around a metre long.</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-6 col-12 wire">
+
+                    <table>
+                        <tr>
+                            <th>Turtles caught in the act</th>
+                        </tr>
+                        <tr>
+                            <td>You don’t need to be a fossil expert to work out what these two turtles were up to just before they died</td>
+                        </tr>
+                        <tr>
+                            <td>Discovered: Messel Fossil Pit, Germany, 1987</td>
+                        </tr>
+                        <tr>
+                            <td>Age: 47 million years</td>
+                        </tr>
+                        <tr>
+                            <td>Location: Senckenburg Natural History Museum, Frankfurt</td>
+                        </tr>
+                        <tr>
+                            <td>The French famously call it the little death. But for this pair of mating turtles, the little death became a big death. As they sank down into the depths of a lake in their post-coital bliss, they reached toxic waters and perished. Their fossil remains leave no doubt that they died in the act of mating.</td>
+                        </tr>
+                        <tr>
+                            <td>Around 30 fossils of mating insects have been found, most of them caught in amber. But the turtles, Allaeochelys crassesculpta, are the first ancient vertebrates to be caught in the act. They lived in a volcanic lake in what is now Messel, Germany. The deep water was both anoxic and toxic, creating both a death trap and ideal conditions for fossilisation.</td>
+                        </tr>
+                    </table>
+                </div>  
+
+                <div class="col-md-6 col-12 wire">
+
+                    <figure class="figure hoverable">
+                      <img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2015/02/dn26973-1_800.jpg" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption text-right"><small>Image: 2012 The Royal Society</small></figcaption>
+                    </figure>
+
+                 </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-6 col-12 wire">
+
+                    <figure class="figure hoverable">
+                      <img src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2015/02/dn26984-1_800.jpg" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption text-right"><small>Image: 2012 Frey, Tischlinger</small></figcaption>
+                    </figure>
+
+                 </div>
+
+                <div class="col-md-6 col-12 wire">
+
+                    <table>
+                        <tr>
+                            <th>Fish catches fish-catching pterosaur</th>
+                        </tr>
+                        <tr>
+                            <td>The swooping pterosaur snatched a fish from the water, only to be caught by a much bigger fish leaping into the air</td>
+                        </tr>
+                        <tr>
+                            <td>Discovered: Solnhofen, Germany, 2009</td>
+                        </tr>
+                        <tr>
+                            <td>Age: 155 million years</td>
+                        </tr>
+                        <tr>
+                            <td>Location: Wyoming Dinosaur Center, US</td>
+                        </tr>
+                        <tr>
+                            <td>The pterosaur flew just above the water of the tropical lagoon. Snap! It snatched a small, herring-like fish from the water and began to swallow it. But the noise attracted a predator. Up popped Aspidorhynchus, a sleek fish about 60 centimetres long. The fish leaped out of the water and grabbed the pterosaur by its left wing as it was flying. All the animals then splashed down into the water.</td>
+                        </tr>
+                        <tr>
+                            <td>But the Aspidorhynchus had bitten off more than it could chew. It didn’t have wide jaws and cutting teeth capable of dealing with such large prey. Its narrow jaws, ending in a pointed snout, were lined with lots of small, sharp teeth best suited to catching other fish. These teeth became entangled with the tough fibres, or aktinofibrils, that reinforced the wing membranes of the pterosaur, Rhamphorhynchus muensteri.</td>
+                        </tr>
+                    </table>
+                </div>  
+
+                
+                     
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section>   
+
+            <div class="row">   
+                <div class="col-12 wire d-flex justify-content-center mt-4">   
+
+                    <!--Pagination-->
+                    <nav aria-label="pagination">
+                        <ul class="pagination pg-blue">
+                            <!--Arrow left-->
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+
+       
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <div class="container wire"> 
+
+        <div class="row">
+
+             <!-- Grid column -->
+        <div class="col-md-3 mt-md-0 mt-3 wire">
+
+          <!-- Content -->
+          <h5 class="text-uppercase mb-3">Disclaimer</h5>
+          <p>No copyright infringement intended, we do not own the images nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">Check out our sources</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a  href="https://www.newdinosaurs.com/" target="_blank">New Dinosaurs</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.livescience.com/" target="_blank">Live Science</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.factmonster.com/" target="_blank">Facts Monsters</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">About Thunder Lizards</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a href="about.html">Contact Us</a>
+              </li>
+              <li class="mt-2">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="mt-2">
+                <a href="#!">Subscribe</a>
+              </li>
+              <li class="mt-2">
+                <a href="#!">FAQ</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+
+          <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">News letter?</h5>
+
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 wire">
+                    <td colspan="2"><input type="text" class="form-control" placeholder="Email Address"></td>
+                </div>
+            </div>
+             <div class="row mt-2">
+
+                <div class="col-lg-6 col-md-12 col-6 wire">
+                    <td><input type="email" class="form-control" placeholder="Name"></td>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-6 wire">
+                    <td><button class="btn btn-sm btn-css" type="submit">Submit</button></td>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 wire">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> ThunderLizards.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+    
+    
+    
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

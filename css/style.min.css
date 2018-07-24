@@ -1,0 +1,117 @@
+html,
+body,
+.header,
+#intro {
+	height: 100%;
+}
+
+
+.wire {
+	/*border: 1px dashed black;*/
+}
+
+.top-nav-collapse {
+	background-color: #248b40;
+}
+
+.clear:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+
+#height1 {
+	background: url("../img/mesozoic-landscapes.jpg")no-repeat center center;
+	height: 200px;
+	z-index: 2;
+}
+.dino {
+	width: 100%;
+}
+
+.btn-css {
+	width: 100%;
+	margin-left: 0;
+	background-color: #248b40;
+}
+
+#myBtn {
+	border-radius: 30px;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 75px;
+	z-index: 5;
+	width: 200px;
+	opacity: 0.5;
+
+}
+
+.target > button > p {
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+/*desktop*/
+@media only screen and (min-width: 961px) {
+#intro {
+	background: url("../img/banner.jpg")no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.excerpt {
+	min-height: 125px;
+}
+
+
+}
+
+
+/*tablet*/
+@media only screen and (min-width: 416px) and (max-width: 960px) {
+#intro {
+	background: url("../img/banner-tablet.jpg")no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.excerpt {
+	min-height: 170px;
+}
+
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 415px) {
+.excerpt {
+	min-height: 125px;
+}
+
+/*h1, h2 {
+	font-size: 15px;
+}
+
+p {
+	font-size: 10px;
+}*/
+
+#intro {
+	background: url("../img/banner-mobile.jpg")no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+}

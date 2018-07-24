@@ -1,0 +1,11 @@
+.fos-intro {
+	background: url("https://assets.answersingenesis.org/img/cms/content/contentnode/header_image/dinosaur-bones.jpg")no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.fos-h3 {
+	margin-right: 10px;
+}

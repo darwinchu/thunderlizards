@@ -1,0 +1,950 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".target").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gallery</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-gallery.css">
+    <link rel="shortcut icon" type="img/png/jpg" href="https://d30y9cdsu7xlg0.cloudfront.net/png/37856-200.png">
+</head>
+
+<body>
+
+    <a href="#gal-top" class="target">
+        <button id="myBtn" title="Go to top" class="btn btn-info animated fadeIn">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            <p>Top</p>
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        </button>
+    </a>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    </script>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top top-nav-collapse">
+
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html">Paleontology</a>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="index.html">History</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link target" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="fossils.html">Fossils</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="about.html">About us</a>
+                        </li>
+
+                    </ul>
+                    <!-- Links -->
+
+                    <ul class="navbar-nav nav-flex-icons">
+
+                        <li class="nav-item">
+                            <a href="http://facebook.com/darwinchu12" target="_blank" class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Collapsible content -->
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+
+    <main class="mt-5 wire" id="gal-top">
+       
+       <div class="container wire card card-body">
+        
+        <section>
+            <div class="row view full-bg-img gal-intro">
+
+                <div class="col-lg-6 col-md-6 col-12 wire rgba-black-strong">
+                    
+                    <h3 class="form-inline md-form form-sm white-text">Dinosaur pictures & facts</h3>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 wire rgba-black-strong">
+
+                    <form class="form-inline md-form form-sm ">
+                        <input class="form-control form-control-sm ml-3 w-75 white-text" type="text" placeholder="Search">
+                         <i class="fa fa-search white-text" aria-hidden="true"></i>
+                    </form>
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <section>   
+
+            <hr class="my-4">    
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 wire mb-4">
+
+                    <!-- Image -->
+                    <div class="view rounded z-depth-1-half mb-4 zoom">
+                        <img class="img-fluid" src="img/carnivore.jpg" alt="Sample image">
+                        <div class="mask d-flex align-items-center justify-content-center rgba-grey-light">
+                            <div class="text-center">
+                                <h2 class="white-text font-weight-bold">Carnivores</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 wire"> 
+                    <!--Navbar-->
+                    <div class="navbar navbar-dark navbar-expand-lg navbar-expand-md gal-selection align-items-center justify-content-center">
+
+                        <!-- Collapse button -->
+                        <button class="navbar-toggler black-text" type="button" data-toggle="collapse" data-target="#carnivore" aria-controls="basicExampleNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <p><small>Expand Carnivore Section</small></p>
+                        </button>
+
+                        <!-- Collapsible content -->
+                        <div class="collapse navbar-collapse row" id="carnivore">
+
+                            <div class="col-12 wire">   
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://i.ytimg.com/vi/RSsAa0sG4-M/maxresdefault.jpg" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Giganotosaurus</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item1" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item1">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="http://ichef.bbci.co.uk/naturelibrary/images/ic/credit/640x395/s/sp/spinosaurus/spinosaurus_1.jpg" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Spinosaurus</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item2" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item2">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://vignette.wikia.nocookie.net/bestinslot/images/a/a1/Argentinosaurus_jwtg.jpg/revision/latest?cb=20161227113600" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Argentinosaurus</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item3" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item3">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://i.ytimg.com/vi/mCwlCp1AC6Y/maxresdefault.jpg" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Velociraptors</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item4" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item4">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+                            </div>
+                        </div>
+                        <!-- Collapsible content -->
+
+                    </div>
+
+  
+                </div>
+
+                    
+                </div>
+
+
+                <div class="col-lg-4 col-md-4 wire mb-4">
+                    <!-- Image -->
+                    <div class="view rounded z-depth-1-half mb-4 zoom">
+                        <img class="img-fluid" src="img/hervibores.jpg" alt="Sample image">
+                        <div class="mask d-flex align-items-center justify-content-center rgba-grey-light">
+                            <div class="text-center">
+                                <h2 class="white-text font-weight-bold">Hervivores</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 wire"> 
+                    <!--Navbar-->
+                    <div class="navbar navbar-dark navbar-expand-lg navbar-expand-md gal-selection align-items-center justify-content-center">
+
+                        <!-- Collapse button -->
+                        <button class="navbar-toggler black-text" type="button" data-toggle="collapse" data-target="#hervivore" aria-controls="basicExampleNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <p><small>Expand Hervivores Section</small></p>
+                        </button>
+
+                        <!-- Collapsible content -->
+                        <div class="collapse navbar-collapse row" id="hervivore">
+
+                            <div class="col-12 wire">   
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="http://images.dinosaurpictures.org/Triceratops-Facts_1713.jpg" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Tricerotops</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item5" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item5">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://img00.deviantart.net/c3df/i/2014/163/3/8/dracorex_hogwartsia_by_thewoodparable-d7m3jb7.jpg" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Dracorex</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item6" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item6">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://www.thoughtco.com/thmb/-TZEcuvs5qw29WsOVfY061nf4-Q=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/moschopsDB-56a253013df78cf772746de6.jpg" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Moschops</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item7" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item7">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://i.ytimg.com/vi/y_9JjCG6HdQ/maxresdefault.jpg" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Ankylosaurus</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item8" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item8">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+                            </div>
+                        </div>
+                        <!-- Collapsible content -->
+
+                    </div>
+                </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-4 wire mb-4">
+                    <!-- Image -->
+                    <div class="view rounded z-depth-1-half mb-4 zoom">
+                        <img class="img-fluid" src="img/omnivore.jpg" alt="Sample image">
+                        <div class="mask d-flex align-items-center justify-content-center rgba-grey-light">
+                            <div class="text-center">
+                                <h2 class="white-text font-weight-bold">Omnivores</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 wire"> 
+                    <!--Navbar-->
+                    <div class="navbar navbar-dark navbar-expand-lg navbar-expand-md gal-selection align-items-center justify-content-center">
+
+                        <!-- Collapse button -->
+                        <button class="navbar-toggler black-text" type="button" data-toggle="collapse" data-target="#omnivore" aria-controls="basicExampleNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <p><small>Expand Omnivore Section</small></p>
+                        </button>
+
+                        <!-- Collapsible content -->
+                        <div class="collapse navbar-collapse row" id="omnivore">
+
+                            <div class="col-12 wire">   
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://d1u5p3l4wpay3k.cloudfront.net/arksurvivalevolved_gamepedia/thumb/f/f8/Oviraptor_PaintRegion2.jpg/400px-Oviraptor_PaintRegion2.jpg">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Oviraptor</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item9" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item9">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://www.thoughtco.com/thmb/A-1Rbmkxr6sn0HHL17YQJa-2QtE=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/oviraptorWC-58b9b5f75f9b58af5c9c1e57.JPG" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Gigantoraptor</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item10" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item10">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/54/336/1000/1000/636441100638051853.png" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Therizinosaurus</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item11" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item11">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+
+                                <!-- dinosaurs -->
+                                <div class="row">
+                                    <div class="col-lg-12 wire">
+                                        <hr class="my-3">
+                                        <div class="row">
+
+                                            <div  class="col-12 wire">
+                                                <!--Image-->
+                                                <div class="view overlay rounded z-depth-1">
+                                                  <img class="img-fluid gal-img-resize" src="https://img00.deviantart.net/787d/i/2012/310/f/e/ornithomimus_by_vitor_silva-d5k56y3.jpg" alt="Sample image">
+                                                  <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                  </a>
+                                                </div>
+                                            </div>
+
+                                            <div  class="col-12 wire">
+                                                <p class="font-weight-bold dark-grey-text">Ornithomimus</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                  <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. <a data-toggle="collapse" href="#item12" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                                    <!-- Collapsible element -->
+                                                    <div class="collapse" id="item12">
+                                                        <div>
+                                                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- / Collapsible element -->
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dinosaurs -->
+                            </div>
+                        </div>
+                        <!-- Collapsible content -->
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section>   
+
+
+
+            <div class="row">   
+                <div class="col-12 wire d-flex justify-content-center">   
+
+                    <!--Pagination-->
+                    <nav aria-label="pagination">
+                        <ul class="pagination pg-blue">
+                            <!--Arrow left-->
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+
+       
+    </main>
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <div class="container wire"> 
+
+        <div class="row">
+
+             <!-- Grid column -->
+        <div class="col-md-3 mt-md-0 mt-3 wire">
+
+          <!-- Content -->
+          <h5 class="text-uppercase mb-3">Disclaimer</h5>
+          <p>No copyright infringement intended, we do not own the images nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">Check out our sources</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a  href="https://www.newdinosaurs.com/" target="_blank">New Dinosaurs</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.livescience.com/" target="_blank">Live Science</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.factmonster.com/" target="_blank">Facts Monsters</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">About Thunder Lizards</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a href="about.html">Contact Us</a>
+              </li>
+              <li class="mt-2">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="mt-2">
+                <a href="#!">Subscribe</a>
+              </li>
+              <li class="mt-2">
+                <a href="#!">FAQ</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+
+          <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">News letter?</h5>
+
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 wire">
+                    <td colspan="2"><input type="text" class="form-control" placeholder="Email Address"></td>
+                </div>
+            </div>
+             <div class="row mt-2">
+
+                <div class="col-lg-6 col-md-12 col-6 wire">
+                    <td><input type="email" class="form-control" placeholder="Name"></td>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-6 wire">
+                    <td><button class="btn btn-sm btn-css" type="submit">Submit</button></td>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 wire">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> ThunderLizards.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+    
+    
+    
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".target").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>About</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-fossils.css">
+
+    <link rel="shortcut icon" type="img/png/jpg" href="https://d30y9cdsu7xlg0.cloudfront.net/png/37856-200.png">
+</head>
+
+<body>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top top-nav-collapse">
+
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html">Paleontology</a>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="index.html">History</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="fossils.html">Fossils</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link target" href="about.html">About us</a>
+                        </li>
+
+                    </ul>
+                    <!-- Links -->
+
+                    <ul class="navbar-nav nav-flex-icons">
+
+                        <li class="nav-item">
+                            <a href="http://facebook.com/darwinchu12" target="_blank" class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Collapsible content -->
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+
+    <main class="mt-5 wire" id="abo-top">
+       
+       <div class="container wire card card-body">
+        
+        <section>
+            <div class="row">
+                <div class="col-12 wire">
+                    <h4>About Thunder Lizards</h4>
+                    <p>We provide credible informations about the study of animal fossils or simply dinosaurs. Our aim is to provide learning environment for children or aspiring paleontologist with a non complicated website that is easy to navigate. After the release of this website to which is only a beta for now, we promise to update the contents weekly for newly find fossils around the globe and new studies too. You may find our sources at the link below the website to check our credibility.</p>
+
+                    <p>The website is currently under-development and please bear with us. Soon the store will be open and a customer profile to post their own blogs about dinosaurs or anything of the like. We want to hear your voice, if you have free time you may contact us on this page, you can just follow the instructions, hope  to hear from you.</p>
+
+                    <p>Thunder Lizards: exploring the fruits of dinosaurs for more than... 7 days?</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 wire">
+                    <h4>Contact Us</h4>
+                    <p>If you have comments, question or you wish to get in touch with us, you may do so because you are important to us.</p>
+                    <p>Fire us a message and we'll throw you a reply.</p>
+
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 wire">
+                            <div class="md-form">
+                                <input type="text" id="inputName" class="form-control">
+                                <label for="inputName">Full Name</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12 wire">
+                            <div class="md-form">
+                                <input type="email" id="inputEmail" class="form-control">
+                                <label for="inputEmail">Email Address</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 wire">
+                            <div class="md-form">
+                                <textarea type="text" id="textArea" class="form-control md-textarea" rows="3"></textarea>
+                                <label for="textArea">Your Message</label>
+                                <button type="button" class="btn btn-sm btn-css">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 wire">
+                    <div class="view zoom mt-5">
+                        <img src="http://joomly.net/frontend/web/images/googlemap/map.png" class="img-fluid" alt="">
+                        <div class="mask d-flex align-items-center justify-content-center rgba-black-strong">
+                            <div class="white-text">
+                                <h4>Get in touch with us</h4>
+                                <p>6799 Ayala Ave., Makati City, 1226</p>
+                                <p>helpdesk@thunderlizards.com</p>
+                                <p>(02) 888-1111</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+       
+
+
+
+       
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <div class="container wire"> 
+
+        <div class="row">
+
+             <!-- Grid column -->
+        <div class="col-md-3 mt-md-0 mt-3 wire">
+
+          <!-- Content -->
+          <h5 class="text-uppercase mb-3">Disclaimer</h5>
+          <p>No copyright infringement intended, we do not own the images nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">Check out our sources</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a  href="https://www.newdinosaurs.com/" target="_blank">New Dinosaurs</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.livescience.com/" target="_blank">Live Science</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.factmonster.com/" target="_blank">Facts Monsters</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">About Thunder Lizards</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a href="about.html">Contact Us</a>
+              </li>
+              <li class="mt-2">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="mt-2">
+                <a href="#!">Subscribe</a>
+              </li>
+              <li class="mt-2">
+                <a href="#!">FAQ</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+
+          <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">News letter?</h5>
+
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 wire">
+                    <td colspan="2"><input type="text" class="form-control" placeholder="Email Address"></td>
+                </div>
+            </div>
+             <div class="row mt-2">
+
+                <div class="col-lg-6 col-md-12 col-6 wire">
+                    <td><input type="email" class="form-control" placeholder="Name"></td>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-6 wire">
+                    <td><button class="btn btn-sm btn-css" type="submit">Submit</button></td>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 wire">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> ThunderLizards.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+    
+    
+    
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,813 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".target").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Index</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="img/png/jpg" href="https://d30y9cdsu7xlg0.cloudfront.net/png/37856-200.png">
+</head>
+
+<body>
+
+    <a href="#banner" class="target">
+        <button id="myBtn" title="Go to top" class="btn btn-info animated fadeIn">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            <p>Top</p>
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+    </a>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    </script>
+
+    <header class="header">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar animated fadeInDown">
+
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html">Paleontology</a>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+
+                        <li class="nav-item active">
+                            <a class="nav-link target" href="index.html">History</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="fossils.html">Fossils</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link target" href="about.html">About us</a>
+                        </li>
+
+                    </ul>
+                    <!-- Links -->
+
+                    <ul class="navbar-nav nav-flex-icons">
+
+                        <li class="nav-item">
+                            <a href="http://facebook.com/darwinchu12" target="_blank" class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Collapsible content -->
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+
+        <div id="intro" class="view">
+            <div class="full-bg-img rgba-black-strong container-fluid d-flex align-items-center justify-content-center" id="banner">
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-12 text-center animated fadeInLeft">
+                        <h2 class="display-3 font-bold white-text mb-2">Thunder Lizards</h2>
+                        <hr class="hr-light">
+                        <h4 class="white-text my-4">Welcome to the world of dinosaurs!</h4>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="mt-5 wire">
+       
+       <div class="container wire">
+           
+            <section>
+
+                <div id="home-top"> 
+                     <p>Home  / <a href="#pre" class="target">Precambrian</a> / <a href="#pal" class="target">Palaeozoic Era</a> / <a href="#mes" class="target">Mesozoic Era</a> / <a href="#cre" class="target">Cretaceous  Era</a> / <a href="#ext" class="target">Extinction</a></p><br>
+                </div>
+
+
+               
+
+                <h2 class="mb-4 font-weight-bold">Era of the dinosaurs and Geological timescale</h2>
+
+                <div class="row d-flex justify-content-center mb-4 wire">
+
+                    <div class="col-lg-4 wire col-md-12 d-flex  justify-content-center wire">
+
+
+                       <!--Zoom effect-->
+                        <div class="view overlay zoom">
+                            <img src="img/mesozoic-era.jpeg"  alt="mesozioc-era.jpeg">
+                            <div class="mask flex-center ">
+                                <p class="white-text">Mesozoic Era</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-8 col-md-12 wire">
+
+                        <div class="row d-flex justify-content-center mb-4 wire">
+
+                            <div class="col-lg-12 wire">
+                                <p>Dinosaurs roamed the planet for about 165 million years, during a time in the Earth’s history called the <strong>Mesozoic Era.</strong> It is difficult to imagine how long this was, until we compare it with ourselves: humans have lived on Earth for less than two million years. During the Mesozoic Era, the Earth’s landmasses changed dramatically, new seas were formed, and plants and animals evolved.</p>
+                                <p>Geologists divide Earth’s long history into a series of time zones, from the origin of the planet, about 4,600 million years ago, right up to the present day. The major divisions are called eras. These are sub-divided into smaller time zones called periods. Within each period are smaller divisions called Ages (not shown in this diagram). Dinosaurs lived in the Mesozoic Era, which is divided into the Triassic, Jurassic and Cretaceous Periods. Humans live in the Quaternary Period of the Cenozoic Era.</p> 
+
+                            </div>
+
+                            <div class="col-lg-12 wire" id="height1"></div>
+
+                            <small class="text-muted">
+                                Informations and images found at <cite title="https://www.factmonster.com/dk/encyclopedia/science/era-dinosaurs">factmonsters.com</cite>
+                            </small>
+
+                        </div>
+
+                         
+                    </div>
+                    
+                </div>
+
+
+                
+            </section>
+
+            <hr class="my-5" id="pre">
+            <h2 class="font-weight-bold my-5 text-center">Chronological Timescale</h2>
+
+
+            <section class="team-section my-5">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 mb-5 wire time ">
+
+                      <div class="view d-flex align-items-center justify-content-center">
+                        <img src="img/precambrian.jpeg" class="rounded-circle z-depth-1 dino" alt="time scale">
+                        
+                        <div class="mask rounded-circle d-flex align-items-center justify-content-center rgba-yellow-light">
+                            <div class="text-center">
+                                <h2 class="white-text font-weight-bold">Precambrian</h2>
+                                <p class="white-text font-weight-bold">4,600 - 545 MYA</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 mb-5 wire">
+                         <!--Panel-->
+                        <div class="p-3">
+                            <strong>The Precambrian or Pre-Cambrian, sometimes abbreviated pЄ, or Cryptozoic</strong>
+                            <p>Precambrian  time covers the vast bulk of the Earth's history, starting with the planet's creation about 4.5 billion years ago and ending with the emergence of complex, multicelled life-forms almost four billion years later.</p>
+                            <strong>What Was Happening on Earth at This Time? You might ask..</strong>
+                            <p>The Precambrian is the earliest of the geologic ages, which are marked by different layers of sedimentary rock. Laid down over millions of years, these rock layers contain a permanent record of the Earth's past, including the fossilized remains of plants and animals buried when the sediments were formed.</p>
+                            <p>The Earth was already more than 600 million years old when life began. The planet had cooled down from its original molten state, developing a solid crust and oceans created from water vapor in the atmosphere. Many scientists think these primordial seas gave rise to life, with hot, mineral-rich volcanic vents acting as catalysts for chemical reactions across the surface of tiny water bubbles, which led to the first cell membranes. Other bubbles are thought to have formed self-replicating substances by attracting chemicals from around them. Over time the two combined to produce energy-using, living cells... <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><small>see more</small></a></p>
+                            <!-- Collapsible element -->
+                            <div class="collapse" id="collapseExample">
+                                <div>
+                                    <p>The earliest living organisms were microscopic bacteria, which show up in the fossil record as early as 3.4 billion years ago. As their numbers multiplied and supplies of their chemical fuel were eaten up, bacteria sought out an alternative energy source. New varieties began to harness the power of the sun through a biochemical process known as photosynthesis—a move that would ultimately lead to simple plants and which opened the planet up to animal life.</p>
+                                    <p>Some three billion years ago, the Earth's atmosphere was virtually devoid of oxygen. At about 2.4 billion years ago, oxygen was released from the seas as a byproduct of photosynthesis by cyanobacteria. Levels of the gas gradually climbed, reaching about one percent around two billion years ago. About 800 million years ago, oxygen levels reached about 21 percent and began to breathe life into more complex organisms. The oxygen-rich ozone layer was also established, shielding the Earth's surface from harmful solar radiation.</p>
+                                    <strong>Unfamiliar Life-Forms</strong>
+                                    <p>The first multicelled animals appeared in the fossil record almost 600 million years ago. Known as the Ediacarans, these bizarre creatures bore little resemblance to modern life-forms. They grew on the seabed and lacked any obvious heads, mouths, or digestive organs. Fossils of the largest known among them, Dickinsonia, resemble a ribbed doormat. What happened to the mysterious Ediacarans isn't clear. They could be the ancestors of later animals, or they may have been completely erased by extinction.</p>
+
+                                    <figure class="figure">
+                                      <img src="https://www.nationalgeographic.com/content/dam/animals/pictures/invertebrates/group/sponges/_sponges_01.adapt.676.1.jpg" class="figure-img img-fluid" alt="figure for pinksponge">
+                                      <figcaption class="figure-caption text-right">A pink sponge, photographed at an aquarium today</figcaption>
+                                    </figure>
+
+
+                                </div>
+                            </div>
+                            <!-- / Collapsible element -->
+
+
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                Source: National Geographic <cite title="https://www.nationalgeographic.com/science/prehistoric-world/precambrian-time/">nationalgeographic.com</cite>
+                                </small>
+                            </footer>
+                        </div>
+                        <!--/.Panel-->
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="my-5">
+                <div class="row">
+
+                    <div class="col-lg-12 col-md-12 mb-5 wire time "> 
+
+                        <!-- Card Wider -->
+                        <div class="card-cascade wider">
+
+                          <!-- Card image -->
+                          <div class="view view-cascade zoom">
+                            <img class="card-img-top" src="img/paleozoic-era.jpg" alt="Card image cap" id="pal">
+                            
+
+                                <div class="mask d-flex align-items-center justify-content-center rgba-cyan-light">
+                                    <div class="text-center">
+                                        <h2 class="white-text font-weight-bold">Palaeozoic Era</h2>
+                                        <p class="white-text font-weight-bold">545 - 250 MYA</p>
+                                    </div>
+                                </div>
+
+
+                          </div>
+
+                          <!-- Card content -->
+                          <div class="card-body card-body-cascade">
+
+                            <!-- Title -->
+                            <strong>Palaeozoic era also know  as the Marine life</strong>
+                           
+                            <!-- Text -->
+                            <p>The Paleozoic began with the <strong>Cambrian Period,</strong> 53 million years best known for ushering in an explosion of life on Earth. This "Cambrian explosion" included the evolution of arthropods (ancestors of today's insects and crustaceans) and chordates (animals with rudimentary spinal cords). In the Paleozoic Era, life flourished in the seas. After the Cambrian Period came the 45-million-year <strong>Ordovician Period,</strong> which is marked in the fossil record by an abundance of marine invertebrates. Perhaps the most famous of these invertebrates was the trilobite, an armored arthropod that scuttled around the seafloor for about 270 million years before going extinct. </p>
+
+                            <p>After the Ordovician Period came the <strong>Silurian Period</strong> (443 million years ago to 416 million years ago), which saw the spread of jawless fish throughout the seas. Mollusks and corals also thrived in the oceans, but the big news was what was happening on land: the first undisputed evidence of terrestrial life. This was the time when plants evolved, though they most likely did not yet have leaves or the vascular tissue that allows modern plants to siphon up water and nutrients. Those developments would appear in the <strong>Devonian Period,</strong> the next geological period of the Paleozoic. Ferns appeared, as did the first trees. At the same time, the first vertebrates were colonizing the land. These vertebrates were called tetrapods, and they were widely diverse: Their appearance ranged from lizardlike to snakelike, and their size ranged from 4 inches (10 cm) long to 16 feet (5 meters) long, according to a study released in 2009 in the Journal of Anatomy. </p>
+
+
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                Source: Live Sience <cite title="https://www.livescience.com/37584-paleozoic-era.html">livescience.com</cite>
+                                </small>
+                            </footer>
+
+                          </div>
+
+                          <!-- figure -->
+                          <div class="view view-cascade zoom">
+
+                            <figure class="figure">
+                            <img class="card-img-top" src="img/eryops.jpg" alt="Card image cap">
+                            <figcaption class="figure-caption text-left">The skeleton of Eryops, one of the earliest land-walking tetrapods.</figcaption>
+                            <footer class="blockquote-footer"   id="mes">
+                                <small class="text-muted">
+                                Credit: &copy; Christine M. Janis
+                                </small>
+                            </footer>
+                            </figure>
+
+                            
+                          </div>
+
+                        </div>
+                        <!-- figure -->
+
+
+
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="my-5">
+                <h4><strong>You must  be wondering where are the monstrous lizards?</strong></h4>
+                <p><small>Carefull what you wish for...</small></p>
+                <h2 class="mb-4">The Mesozoic Era, Age Of Dinosaurs 250 - 65 MYA</h2>
+                <p>During the Mesozoic, or "Middle Life" Era, life diversified rapidly and giant reptiles, dinosaurs and other monstrous beasts roamed the Earth. The period, which spans from about 250 million years ago to about 65 million years ago, was also known as the age of reptiles or the age of dinosaurs. The Mesozoic era is divided into 3 periods, the Triassic Period, Jurrasic Period and Cretaceous period. You may see the details of the said divions of the period  below.</p>
+                <div class="row wire">
+
+                    <div class="col-lg-6 col-md-6 mb-5 wire">
+
+
+                        <!-- Image -->
+                        <div class="view rounded z-depth-1-half mb-4">
+                            <img class="img-fluid" src="img/triassic.jpg" alt="Sample image">
+                            <div class="mask d-flex align-items-center justify-content-center rgba-grey-light">
+                                <div class="text-center">
+                                    <h2 class="white-text font-weight-bold">Triassic Period</h2>
+                                    <p class="white-text font-weight-bold">250 - 200 MYA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Excerpt -->
+                        <div class="excerpt">
+                             <p class="dark-grey-text">Early in the Triassic, a group of reptiles, the order Ichthyosauria, returned to the ocean. Fossils of early ichthyosaurs are lizard-like and clearly show their tetrapod ancestry. Their vertebrae indicate they probably swam by moving their entire bodies side to side, like modern eels.</p>
+                        </div>
+                        
+                        <!-- dinosaurs -->
+                        <div class="row">
+                            <div class="col-lg-12 wire">
+                                <hr class="my-3">
+                                <div class="row">
+
+                                    <div  class="col-lg-4 col-4 wire">
+                                        <!--Image-->
+                                        <div class="view overlay rounded z-depth-1">
+                                          <img class="img-fluid" src="img/arizonasaurus.jpeg" alt="Sample image">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-lg-8 col-8 wire">
+                                        <p class="font-weight-bold dark-grey-text">Arizonasaurus</p>
+
+                                        <div class="d-flex justify-content-between">
+                                          <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a data-toggle="collapse" href="#item1" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                            <!-- Collapsible element -->
+                                            <div class="collapse" id="item1">
+                                                <div>
+                                                    <p>Sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <!-- / Collapsible element -->
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dinosaurs -->
+
+
+                        <!-- dinosaurs -->
+                        <div class="row">
+                            <div class="col-lg-12 wire">
+                                <hr class="my-3">
+                                <div class="row">
+
+                                    <div  class="col-lg-4 col-4 wire">
+                                        <!--Image-->
+                                        <div class="view overlay rounded z-depth-1">
+                                          <img class="img-fluid" src="img/placodus.jpg" alt="Sample image">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-lg-8 col-8 wire">
+                                        <p class="font-weight-bold dark-grey-text">Placodus</p>
+
+                                        <div class="d-flex justify-content-between">
+                                          <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a data-toggle="collapse" href="#item2" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                            <!-- Collapsible element -->
+                                            <div class="collapse" id="item2">
+                                                <div>
+                                                    <p>Sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <!-- / Collapsible element -->
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dinosaurs -->
+
+                        <!-- dinosaurs -->
+                        <div class="row">
+                            <div class="col-lg-12 wire">
+                                <hr class="my-3">
+                                <div class="row">
+
+                                    <div  class="col-lg-4 col-4 wire">
+                                        <!--Image-->
+                                        <div class="view overlay rounded z-depth-1">
+                                          <img class="img-fluid" src="img/plateosaurus.jpeg" alt="Sample image">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-lg-8 col-8 wire">
+                                        <p class="font-weight-bold dark-grey-text">Plateosaurus</p>
+
+                                        <div class="d-flex justify-content-between">
+                                          <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a data-toggle="collapse" href="#item3" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                            <!-- Collapsible element -->
+                                            <div class="collapse" id="item3">
+                                                <div>
+                                                    <p>Sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <!-- / Collapsible element -->
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dinosaurs -->
+                    
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 mb-5 wire">
+                        
+                        <div class="view rounded z-depth-1-half mb-4">
+                        <img class="img-fluid" src="img/jurrasic.jpeg" alt="Sample image">
+                            <div class="mask d-flex align-items-center justify-content-center rgba-grey-light">
+                                <div class="text-center">
+                                    <h2 class="white-text font-weight-bold">Jurrasic Period</h2>
+                                    <p class="white-text font-weight-bold">200 - 145 MYA</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- Excerpt -->
+                        <div class="excerpt">
+                            <p class="dark-grey-text">Dinosaurs, birds, and rodents. Crumbling landmasses and inland seas. Sea monsters, sharks, and blood-red plankton. Forests of ferns, cycads, and conifers. Warm, moist, tropical breezes. This was the Jurassic.</p>
+                        </div>
+                        
+                        <!-- dinosaurs -->
+                        <div class="row">
+                            <div class="col-lg-12 wire">
+                                <hr class="my-3">
+                                <div class="row">
+
+                                    <div  class="col-lg-4 col-4 wire">
+                                        <!--Image-->
+                                        <div class="view overlay rounded z-depth-1">
+                                          <img class="img-fluid" src="img/tyronnosaurus-rex.jpeg" alt="Sample image">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-lg-8 col-8 wire">
+                                        <p class="font-weight-bold dark-grey-text">Tyronnosaurus Rex</p>
+
+                                        <div class="d-flex justify-content-between">
+                                          <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a data-toggle="collapse" href="#item4" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                            <!-- Collapsible element -->
+                                            <div class="collapse" id="item4">
+                                                <div>
+                                                    <p>Sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <!-- / Collapsible element -->
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dinosaurs -->
+
+
+                        <!-- dinosaurs -->
+                        <div class="row">
+                            <div class="col-lg-12 wire">
+                                <hr class="my-3">
+                                <div class="row">
+
+                                    <div  class="col-lg-4 col-4 wire">
+                                        <!--Image-->
+                                        <div class="view overlay rounded z-depth-1">
+                                          <img class="img-fluid" src="img/pterodactyl.jpeg" alt="Sample image">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-lg-8 col-8 wire">
+                                        <p class="font-weight-bold dark-grey-text">Pterodactyl</p>
+
+                                        <div class="d-flex justify-content-between">
+                                          <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a data-toggle="collapse" href="#item5" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                            <!-- Collapsible element -->
+                                            <div class="collapse" id="item5">
+                                                <div>
+                                                    <p>Sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <!-- / Collapsible element -->
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dinosaurs -->
+
+                        <!-- dinosaurs -->
+                        <div class="row">
+                            <div class="col-lg-12 wire">
+                                <hr class="my-3">
+                                <div class="row">
+
+                                    <div  class="col-lg-4 col-4 wire">
+                                        <!--Image-->
+                                        <div class="view overlay rounded z-depth-1">
+                                          <img class="img-fluid" src="img/stegosaurus.jpeg" alt="Sample image">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-lg-8 col-8 wire">
+                                        <p class="font-weight-bold dark-grey-text">Stegosaurus</p>
+
+                                        <div class="d-flex justify-content-between">
+                                          <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a data-toggle="collapse" href="#item6" aria-expanded="false" aria-controls="collapseExample"><small>learn more</small></a></p></p>
+                                            <!-- Collapsible element -->
+                                            <div class="collapse" id="item6">
+                                                <div>
+                                                    <p>Sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <!-- / Collapsible element -->
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dinosaurs -->
+
+                    </div>
+
+                    <div class="col-lg-12" id="cre">
+                        <!-- Image -->
+                        <div class="view rounded z-depth-1-half mb-4">
+                            <img class="img-fluid" src="img/cretaceous.jpg" alt="Sample image">
+                            <div class="mask d-flex align-items-center justify-content-center rgba-grey-light">
+                                <div class="text-center">
+                                    <h2 class="white-text font-weight-bold">Cretaceous Period</h2>
+                                    <p class="white-text font-weight-bold">145 - 65 MYA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                 <!-- Excerpt -->
+                <div class="excerpt">
+                    <p class="dark-grey-text">The Cretaceous Period was the last and longest segment of the Mesozoic Era. It lasted approximately 79 million years, from the minor extinction event that closed the Jurassic Period about 145.5 million years ago to the Cretaceous-Paleogene (K-Pg) extinction event dated at 65.5 million years ago. In the early Cretaceous, the continents were in very different positions than they are today. Sections of the supercontinent Pangaea were drifting apart. The Tethys Ocean still separated the northern Laurasia continent from southern Gondwana. The North and South Atlantic were still closed, although the Central Atlantic had begun to open up in the late Jurassic Period. By the middle of the period, ocean levels were much higher; most of the landmass we are familiar with was underwater. By the end of the period, the continents were much closer to modern configuration. Africa and South America had assumed their distinctive shapes; but India had not yet collided with Asia and Australia was still part of Antarctica.</p>
+                </div>
+                
+
+            </section>
+
+            <hr class="my-5" id="ext">
+
+            <section>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4><strong>And then It happened, out of million chances, it hit earth</strong></h4>
+                        <p><small>66 million years ago</small></p>
+                        <p>Out of all the places in the world an asteroid could have walloped ancient Earth, the Yucatán Peninsula was possibly the worst. That’s the premise of a new study examining what happened 66 million years ago, after a 7.5-mile-wide asteroid crashed into the ocean near what’s now the port town of Chicxulub, Mexico. The impact brought the age of dinosaurs to an abrupt end, wiping out the vast majority of the iconic beasts along with about three-quarters of all life on Earth.</p>
+
+                        <!-- Image -->
+                        <div class="view rounded z-depth-1-half mb-4">
+                            <img class="img-fluid" src="https://i.kinja-img.com/gawker-media/image/upload/s--LepbY5sr--/c_fill,f_auto,fl_progressive,g_center,h_675,q_80,w_1200/hbnhpb0ycfrneo4jztgv.gif" alt="Sample image">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <hr class="my-5">
+
+
+
+            
+
+       </div>
+       
+    </main>
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <div class="container wire"> 
+
+        <div class="row">
+
+             <!-- Grid column -->
+        <div class="col-md-3 mt-md-0 mt-3 wire">
+
+          <!-- Content -->
+          <h5 class="text-uppercase mb-3">Disclaimer</h5>
+          <p>No copyright infringement intended, we do not own the images nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">Check out our sources</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a  href="https://www.newdinosaurs.com/" target="_blank">New Dinosaurs</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.livescience.com/" target="_blank">Live Science</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+              </li>
+              <li class="mt-2">
+                <a href="https://www.factmonster.com/" target="_blank">Facts Monsters</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">About Thunder Lizards</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a href="about.html">Contact Us</a>
+              </li>
+              <li class="mt-2">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="mt-2">
+                <a href="#!">Subscribe</a>
+              </li>
+              <li class="mt-2">
+                <a href="#!">FAQ</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+
+          <div class="col-md-3 mb-md-0 mb-3 wire">
+
+            <!-- Links -->
+            <h5 class="text-uppercase mb-3">News letter?</h5>
+
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 wire">
+                    <td colspan="2"><input type="text" class="form-control" placeholder="Email Address"></td>
+                </div>
+            </div>
+             <div class="row mt-2">
+
+                <div class="col-lg-6 col-md-12 col-6 wire">
+                    <td><input type="email" class="form-control" placeholder="Name"></td>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-6 wire">
+                    <td><button class="btn btn-sm btn-css" type="submit">Submit</button></td>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 wire">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> ThunderLizards.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+    
+    
+    
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

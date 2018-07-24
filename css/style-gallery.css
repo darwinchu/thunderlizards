@@ -1,0 +1,16 @@
+.gal-banner {
+	background-color: red;
+}
+
+.gal-intro {
+	background: url("../img/cretaceous.jpg")no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.gal-img-resize {
+	width: 300px;
+	height: 200px;
+}
