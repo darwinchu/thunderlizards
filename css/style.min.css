@@ -89,6 +89,10 @@ body,
 	min-height: 170px;
 }
 
+#test {
+	display: none;
+}
+
 }
 
 
@@ -96,6 +100,10 @@ body,
 @media only screen and (max-width: 415px) {
 .excerpt {
 	min-height: 125px;
+}
+
+#test {
+	display: none;
 }
 
 /*h1, h2 {
